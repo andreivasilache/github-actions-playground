@@ -1,5 +1,3 @@
-# This script will generate the changelogs, create a new tag (on develop) and then push everything to the staging branch
-
 name: Deploy to staging
 
 on:
@@ -12,9 +10,6 @@ on:
           - major
           - minor
           - patch
-
-env:
-  GIT_PRIVATE_KEY: ${{secrets.GPG_PRIVATE_KEY}}
 
 jobs:
   staging-deploy:
