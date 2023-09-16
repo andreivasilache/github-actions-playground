@@ -1,5 +1,8 @@
 name: Deploy to staging
 
+on:
+  workflow_dispatch:
+
 jobs:
   staging-deploy:
     runs-on: ubuntu-latest
@@ -16,6 +19,7 @@ jobs:
           git-user-name: "Changelog triggered by: {{github.actor}}"
           git-branch: "develop"
       - name: Rebase all the changes to canary
+        uses: actions/checkout@v2
         run: |
           git --version
           git checkout canary
