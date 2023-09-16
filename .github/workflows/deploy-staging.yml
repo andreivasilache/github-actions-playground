@@ -1,4 +1,4 @@
-name: Deploy to staging
+name: Canary deployment
 
 on:
   workflow_dispatch:
@@ -7,10 +7,6 @@ jobs:
   staging-deploy:
     runs-on: ubuntu-latest
     steps:
-      # - name: Git checkout
-      #   uses: actions/checkout@v2
-      #   with:
-      #     fetch-depth: "0"
       - uses: actions/checkout@v2
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
@@ -26,13 +22,3 @@ jobs:
           git checkout canary
           git rebase develop
           git push origin canary
-
-      # - name: Initialize git
-      #   run: |
-      #     git --version
-      #     git config user.name "GitHub Actions Bot Triggered by {{github.actor}}"
-      #     git config user.email "<>"
-      #     git status
-      #     npm version ${{ github.event.inputs.release_type }}
-      #     git push origin develop
-      #     git describe --tags --abbrev=0 |  git push origin

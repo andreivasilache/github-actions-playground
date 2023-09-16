@@ -1,0 +1,19 @@
+name: Canary deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  staging-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Rebase all the changes to canary
+        run: |
+          git --version
+          git fetch origin canary
+          git fetch origin main
+
+          git checkout main
+          git reset origin/canary --hard # make a fidel copy of canary
+          git push origin main --force
