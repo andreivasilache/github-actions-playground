@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.1...v1.1.2) (2023-09-16)
+
+
+### Bug Fixes
+
+* fetch canary before rebasing ([517f990](https://github.com/andreivasilache/github-actions-playground/commit/517f990e56d4a805c050f844af08279c062340fe))
+
+
+
 ## [1.1.1](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.0...v1.1.1) (2023-09-16)
 
 
