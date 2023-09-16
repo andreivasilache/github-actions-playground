@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.3.0...v1.4.0) (2023-09-16)
+
+
+### Features
+
+* bump actions/checkout version to 4 ([c792ee4](https://github.com/andreivasilache/github-actions-playground/commit/c792ee41c8ec0df8e333473a4854808ddd2d7c30))
+
+
+
 # [1.3.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.2.1...v1.3.0) (2023-09-16)
 
 
@@ -31,17 +40,6 @@
 ### Bug Fixes
 
 * fetch canary before rebasing ([517f990](https://github.com/andreivasilache/github-actions-playground/commit/517f990e56d4a805c050f844af08279c062340fe))
-
-
-
-## [1.1.1](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.0...v1.1.1) (2023-09-16)
-
-
-### Bug Fixes
-
-* pls work ([222459c](https://github.com/andreivasilache/github-actions-playground/commit/222459cc2e7055483283d826a62d357cbac45084))
-* push changes to canary ([4e14146](https://github.com/andreivasilache/github-actions-playground/commit/4e14146541f0c5170fc3b55cba8bfec612f9cc03))
-* specify manually trigger ([b3850ac](https://github.com/andreivasilache/github-actions-playground/commit/b3850acb0548862f3cdfc81b3c4879086cf097a0))
 
 
 
