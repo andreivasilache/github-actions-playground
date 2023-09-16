@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.2.1...v1.3.0) (2023-09-16)
+
+
+### Features
+
+* remove useless name ([1f35d67](https://github.com/andreivasilache/github-actions-playground/commit/1f35d6718c4454c6e794ea622779151674a8d4ef))
+
+
+
 ## [1.2.1](https://github.com/andreivasilache/github-actions-playground/compare/v1.2.0...v1.2.1) (2023-09-16)
 
 
@@ -33,18 +42,6 @@
 * pls work ([222459c](https://github.com/andreivasilache/github-actions-playground/commit/222459cc2e7055483283d826a62d357cbac45084))
 * push changes to canary ([4e14146](https://github.com/andreivasilache/github-actions-playground/commit/4e14146541f0c5170fc3b55cba8bfec612f9cc03))
 * specify manually trigger ([b3850ac](https://github.com/andreivasilache/github-actions-playground/commit/b3850acb0548862f3cdfc81b3c4879086cf097a0))
-
-
-
-# [1.1.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.0.0...v1.1.0) (2023-09-16)
-
-
-### Features
-
-* change [#1](https://github.com/andreivasilache/github-actions-playground/issues/1) ([a0dedc5](https://github.com/andreivasilache/github-actions-playground/commit/a0dedc5c87f0db926b7c76c2bbff5d3249ec5c1a))
-* git init ([844ba69](https://github.com/andreivasilache/github-actions-playground/commit/844ba69636064ed059229bf02a3b90c3948a1cd2))
-* Initialise git on workflow ([74ffbf9](https://github.com/andreivasilache/github-actions-playground/commit/74ffbf92909ba5b8b3a666914a36480003b47f59))
-* Use conventional-changelog generator ([5e9aa20](https://github.com/andreivasilache/github-actions-playground/commit/5e9aa20720155450f97e601d6dd16e5f03992ec1))
 
 
 
