@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/andreivasilache/github-actions-playground/compare/v1.2.0...v1.2.1) (2023-09-16)
+
+
+### Bug Fixes
+
+* fix production workflow naming ([713120f](https://github.com/andreivasilache/github-actions-playground/commit/713120fbdc6d9202e1a132edbfe27475c6cbb02a))
+
+
+
 # [1.2.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.2...v1.2.0) (2023-09-16)
 
 
@@ -36,15 +45,6 @@
 * git init ([844ba69](https://github.com/andreivasilache/github-actions-playground/commit/844ba69636064ed059229bf02a3b90c3948a1cd2))
 * Initialise git on workflow ([74ffbf9](https://github.com/andreivasilache/github-actions-playground/commit/74ffbf92909ba5b8b3a666914a36480003b47f59))
 * Use conventional-changelog generator ([5e9aa20](https://github.com/andreivasilache/github-actions-playground/commit/5e9aa20720155450f97e601d6dd16e5f03992ec1))
-
-
-
-# [1.0.0](https://github.com/andreivasilache/github-actions-playground/compare/1c8ddc57cf064c93deff85f72de457ee38096679...v1.0.0) (2023-09-16)
-
-
-### Features
-
-* initial commit ([1c8ddc5](https://github.com/andreivasilache/github-actions-playground/commit/1c8ddc57cf064c93deff85f72de457ee38096679))
 
 
 
