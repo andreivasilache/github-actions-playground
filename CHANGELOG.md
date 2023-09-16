@@ -1,3 +1,14 @@
+## [1.1.1](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.0...v1.1.1) (2023-09-16)
+
+
+### Bug Fixes
+
+* pls work ([222459c](https://github.com/andreivasilache/github-actions-playground/commit/222459cc2e7055483283d826a62d357cbac45084))
+* push changes to canary ([4e14146](https://github.com/andreivasilache/github-actions-playground/commit/4e14146541f0c5170fc3b55cba8bfec612f9cc03))
+* specify manually trigger ([b3850ac](https://github.com/andreivasilache/github-actions-playground/commit/b3850acb0548862f3cdfc81b3c4879086cf097a0))
+
+
+
 # [1.1.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.0.0...v1.1.0) (2023-09-16)
 
 
