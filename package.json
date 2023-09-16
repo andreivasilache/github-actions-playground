@@ -1,0 +1,25 @@
+{
+  "name": "github-actions-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "changelog-rewrite": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreivasilache/github-actions-playground.git"
+  },
+  "author": "Andrei Vasilache",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreivasilache/github-actions-playground/issues"
+  },
+  "homepage": "https://github.com/andreivasilache/github-actions-playground#readme",
+  "dependencies": {
+    "conventional-changelog": "^5.1.0",
+    "conventional-changelog-cli": "^4.1.0"
+  }
+}

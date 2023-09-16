@@ -1,0 +1,31 @@
+# This script will generate the changelogs, create a new tag (on develop) and then push everything to the staging branch
+
+name: Deploy to staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_type:
+        type: choice
+        description: What kind of release are we going to make?
+        options:
+          - major
+          - minor
+          - patch
+
+env:
+  GIT_PRIVATE_KEY: ${{secrets.GPG_PRIVATE_KEY}}
+
+jobs:
+  staging-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize git
+        run: |
+          git --version
+          git config user.name "GitHub Actions Bot Triggered by {{github.actor}}"
+          git config user.email "<>"
+          git status
+          npm version ${{ github.event.inputs.release_type }}
+          git push origin develop
+          git describe --tags --abbrev=0 |  git push origin
