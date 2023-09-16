@@ -1,16 +1,5 @@
 name: Deploy to staging
 
-on:
-  workflow_dispatch:
-    inputs:
-      release_type:
-        type: choice
-        description: What kind of release are we going to make?
-        options:
-          - major
-          - minor
-          - patch
-
 jobs:
   staging-deploy:
     runs-on: ubuntu-latest
@@ -26,6 +15,12 @@ jobs:
           git-message: "chore(release): {version}"
           git-user-name: "Changelog triggered by: {{github.actor}}"
           git-branch: "develop"
+      - name: Rebase all the changes to canary
+        run: |
+          git --version
+          git checkout canary
+          git rebase develop
+          git push origin canary
 
       # - name: Initialize git
       #   run: |
