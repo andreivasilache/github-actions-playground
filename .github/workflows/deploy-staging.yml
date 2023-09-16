@@ -13,7 +13,6 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
           git-message: "chore(release): {version}"
-          git-user-name: "Changelog triggered by: {{github.actor}}"
           git-branch: "develop"
       - name: Rebase all the changes to canary
         run: |
