@@ -15,6 +15,10 @@ jobs:
   staging-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -22,10 +26,7 @@ jobs:
           git-message: "chore(release): {version}"
           git-user-name: "Changelog triggered by: {{github.actor}}"
           git-branch: "develop"
-      # - name: Git checkout
-      #   uses: actions/checkout@v2
-      #   with:
-      #     fetch-depth: "0"
+
       # - name: Initialize git
       #   run: |
       #     git --version
