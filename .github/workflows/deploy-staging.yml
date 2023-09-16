@@ -22,6 +22,7 @@ jobs:
       - name: Rebase all the changes to canary
         run: |
           git --version
+          git fetch origin canary
           git checkout canary
           git rebase develop
           git push origin canary
