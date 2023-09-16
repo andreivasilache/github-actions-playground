@@ -1,4 +1,4 @@
-name: Canary deployment
+name: Production deployment
 
 on:
   workflow_dispatch:
