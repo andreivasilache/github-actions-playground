@@ -7,10 +7,11 @@ jobs:
   staging-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: "0"
+      # - name: Git checkout
+      #   uses: actions/checkout@v2
+      #   with:
+      #     fetch-depth: "0"
+      - uses: actions/checkout@v2
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -19,7 +20,6 @@ jobs:
           git-user-name: "Changelog triggered by: {{github.actor}}"
           git-branch: "develop"
       - name: Rebase all the changes to canary
-        uses: actions/checkout@v2
         run: |
           git --version
           git checkout canary
