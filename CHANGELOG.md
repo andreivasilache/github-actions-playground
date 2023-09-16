@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.2...v1.2.0) (2023-09-16)
+
+
+### Features
+
+* add production deployment script ([0992731](https://github.com/andreivasilache/github-actions-playground/commit/0992731714a34d20b629cc29ffb0583301d93dc3))
+
+
+
 ## [1.1.2](https://github.com/andreivasilache/github-actions-playground/compare/v1.1.1...v1.1.2) (2023-09-16)
 
 
